@@ -12,10 +12,7 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-    	OntopROR ror =
-				new OntopROR("/Users/lucasperes/Documents/Repositories/linked-graphast/src/evaluation/resources/MovieOntology.owl",
-				"/Users/lucasperes/Documents/Repositories/linked-graphast/src/evaluation/resources/mapping.obda");
-//		OntopROR ror = new OntopROR("src/main/resources/PocosDeLibra.owl", "src/main/resources/mapping.obda");
+    	OntopROR ror = new OntopROR("schema file", "mapping file");
 
     	String query = loadQueryFromFile("src/main/resources/query.txt");
     	ResultQuerySet results = ror.runQuery(query);
